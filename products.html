@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Available Medicines</h2>
+<input
+  type="text"
+  id="searchBox"
+  placeholder="Search medicine..."
+  onkeyup="searchProduct()">
+
+<br><br>
+
+<div class="product">
+    Paracetamol - ₹30
+    <button onclick="addToCart('Paracetamol',30)">Add to Cart</button>
+</div>
+
+<div class="product">
+    Dolo 650 - ₹40
+    <button onclick="addToCart('Dolo 650',40)">Add to Cart</button>
+</div>
+
+<div class="product">
+    Saridon - ₹35
+    <button onclick="addToCart('Saridon',35)">Add to Cart</button>
+</div>
+
+<div class="product">
+    Vitamin C - ₹50
+    <button onclick="addToCart('Vitamin C',50)">Add to Cart</button>
+</div>
+
+<br>
+<button onclick="goCart()">Go to Cart</button>
+
+<script src="script.js"></script>
+</body>
+</html>
